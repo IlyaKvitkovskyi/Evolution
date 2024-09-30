@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Evolution</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="" />
+                        </div>
+
+                        <nav class="header__nav">
+                            <ul class="nav__list">
+                                <li class="nav__item nav__item--menu">
+                                    <a href="category-2.html" class="nav__link">Послуги</a>
+                                    <svg
+                                        width="9"
+                                        height="5"
+                                        viewBox="0 0 9 5"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9 0.311705C9 0.232632 8.96979 0.151711 8.91115 0.0910263C8.79386 -0.0303416 8.60194 -0.0303417 8.48465 0.0910263L4.47023 4.24513L0.514465 0.15171C0.397177 0.0303413 0.205253 0.0303413 0.0879664 0.15171C-0.0293203 0.273078 -0.0293203 0.47168 0.0879664 0.593049L4.25699 4.90897C4.37427 5.03034 4.5662 5.03034 4.68348 4.90897L8.91115 0.534204C8.97157 0.471682 9 0.392617 9 0.311705Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="/prices.html" class="nav__link">Ціни</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="contacts.html" class="nav__link">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__contacts">
+                            <div class="address">
+                                <img src="img/location.svg" alt="location" />
+                                <a class="address__link" href="#">м. Київ, вул Освіти 14</a>
+                            </div>
+                            <div class="phone">
+                                <img src="img/phone.svg" alt="phone" />
+                                <a class="phone__link" href="#">+38 (050) 296-45-66</a>
+                            </div>
+                            <div class="lang">
+                                <span class="active">UA</span>
+                                <span>EN</span>
+                            </div>
+                        </div>
+
+                        <!-- Бургер-меню -->
+                        <div class="burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <!-- Мобильное меню (скрыто по умолчанию) -->
+                        <nav class="mobile-nav">
+                            <div class="mobile-nav-wrapper">
+                                <div class="lang-switch">
+                                    <span class="active">UA</span>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>EN</span>
+                                </div>
+
+                                <ul class="nav__list">
+                                    <li class="nav__item nav__link--has-submenu">
+                                        <a href="#" class="nav__link nav__link-menu"
+                                            >Послуги
+                                            <svg
+                                                width="9"
+                                                height="5"
+                                                viewBox="0 0 9 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M9 0.311705C9 0.232632 8.96979 0.151711 8.91115 0.0910263C8.79386 -0.0303416 8.60194 -0.0303417 8.48465 0.0910263L4.47023 4.24513L0.514465 0.15171C0.397177 0.0303413 0.205253 0.0303413 0.0879664 0.15171C-0.0293203 0.273078 -0.0293203 0.47168 0.0879664 0.593049L4.25699 4.90897C4.37427 5.03034 4.5662 5.03034 4.68348 4.90897L8.91115 0.534204C8.97157 0.471682 9 0.392617 9 0.311705Z"
+                                                    fill="white"
+                                                />
+                                            </svg>
+                                        </a>
+
+                                        <ul class="submenu">
+                                            <li><strong>Діагностика</strong></li>
+                                            <li><a href="#">Знімок прицільний</a></li>
+
+                                            <li><a href="#">Знімок панорамний (ОПТГ)</a></li>
+                                            <li>
+                                                <a href="#" <a href="#"
+                                                    >Комп'ютерна 3D томографія зубів та щелеп
+                                                    (КТ)</a
+                                                >
+                                            </li>
+                                            <li><a href="#">3D сканування</a></li>
+
+                                            <li><strong>Проф. гігієна</strong></li>
+                                            <li><a href="#">Ультразвуковий скейлінг</a></li>
+
+                                            <li><a href="#">Чистка зубів Air Flow</a></li>
+
+                                            <li>
+                                                <a href="#">Ремінералізація зубів у дорослих</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Комплексна професійна гігієна зубів</a>
+                                            </li>
+
+                                            <li><strong>Лікування зубів</strong></li>
+                                            <li><a href="#">Лікування карієсу</a></li>
+
+                                            <li><a href="#">Лікування кореневих каналів</a></li>
+                                            <li><a href="#">Лікування гінгівіту</a></li>
+                                            <li><a href="#">Лікування періодонтиту</a></li>
+                                            <li>
+                                                <a href="#">Реставрація зубів фотополімерами</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Ціни</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Контакти</a>
+                                    </li>
+                                </ul>
+
+                                <div class="mobile-buttons">
+                                    <a href="tel:+380502964566" class="mobile-btn"
+                                        >Зателефонувати</a
+                                    >
+                                    <a href="#" class="mobile-btn">Прокласти маршрут</a>
+                                    <a href="#" class="mobile-btn">Записатися на консультацію</a>
+                                </div>
+
+                                <div class="social-icons social-icons-menu">
+                                    <a href="#">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M3 11C3 7.229 3 5.343 4.172 4.172C5.344 3.001 7.229 3 11 3H13C16.771 3 18.657 3 19.828 4.172C20.999 5.344 21 7.229 21 11V13C21 16.771 21 18.657 19.828 19.828C18.656 20.999 16.771 21 13 21H11C7.229 21 5.343 21 4.172 19.828C3.001 18.656 3 16.771 3 13V11Z"
+                                                stroke="#000"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M16.5 9C17.3284 9 18 8.32843 18 7.5C18 6.67157 17.3284 6 16.5 6C15.6716 6 15 6.67157 15 7.5C15 8.32843 15.6716 9 16.5 9Z"
+                                                fill="#000"
+                                            />
+                                            <path
+                                                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                                stroke="#000"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z"
+                                                fill="#000"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M16.6002 5.82C15.9167 5.03953 15.5401 4.0374 15.5402 3H12.4502V15.4C12.4268 16.0712 12.1437 16.7071 11.6605 17.1735C11.1773 17.6399 10.5318 17.9004 9.86016 17.9C8.44016 17.9 7.26016 16.74 7.26016 15.3C7.26016 13.58 8.92016 12.29 10.6302 12.82V9.66C7.18016 9.2 4.16016 11.88 4.16016 15.3C4.16016 18.63 6.92016 21 9.85016 21C12.9902 21 15.5402 18.45 15.5402 15.3V9.01C16.7932 9.90985 18.2975 10.3926 19.8402 10.39V7.3C19.8402 7.3 17.9602 7.39 16.6002 5.82Z"
+                                                fill="#000"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><strong>Діагностика</strong></li>
+                                <li><a href="#">Знімок панорамний (ОПТГ)</a></li>
+                                <li><a href="#">Знімок прицільний</a></li>
+                                <li>
+                                    <a href="#">Комп'ютерна 3D томографія зубів та щелеп (КТ)</a>
+                                </li>
+                                <li><a href="#">3D сканування</a></li>
+                            </ul>
+                            <ul>
+                                <li><strong>Проф. гігієна</strong></li>
+                                <li><a href="#">Ультразвуковий скейлінг</a></li>
+                                <li><a href="#">Чистка зубів Air Flow</a></li>
+                                <li>
+                                    <a href="#">Ремінералізація зубів у дорослих</a>
+                                </li>
+                                <li>
+                                    <a href="#">Комплексна професійна гігієна зубів</a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li><strong>Відбілювання зубів</strong></li>
+                                <li>
+                                    <a href="#">Відбілювання зубів Beyond Polus</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>Лікування зубів</strong></li>
+                                <li><a href="#">Лікування карієсу</a></li>
+                                <li><a href="#">Лікування кореневих каналів</a></li>
+                                <li><a href="#">Лікування гінгівіту</a></li>
+                                <li><a href="#">Лікування періодонтиту</a></li>
+                                <li>
+                                    <a href="#">Реставрація зубів фотополімерами</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><strong>Вирівнювання зубів</strong></li>
+                                <li><a href="#">Брекет-системи</a></li>
+                                <li><a href="#">Елайнери</a></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <strong>Лікування зубіва під мікроскопом</strong>
+                                </li>
+                                <li>
+                                    <a href="#">Лікування карієсу під мікроскопом</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лікування кореневих каналів під мікроскопом</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вініри та коронки під мікроскопом</a>
+                                </li>
+                                <li>
+                                    <a href="#">Діагностика ротової порожнини під мікроскопом</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>Імплантація</strong></li>
+                                <li><a href="#">Імплантація Straumann</a></li>
+                                <li><a href="#">Імплантація MegaGen</a></li>
+                                <li><a href="#">Імплантація JD dental</a></li>
+                                <li>
+                                    <a href="#">Нарощування кісткової тканини</a>
+                                </li>
+                                <li><a href="#">Сінус-ліфтинг</a></li>
+                                <li>
+                                    <a href="#">Формування ясен навколо імпланту</a>
+                                </li>
+                                <li>
+                                    <a href="#">Одномоментна імлантація зубів (за 1 візит)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Двоетапна імплантація (класична)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><strong>Вініри</strong></li>
+                                <li><a href="#">Керамічні вініри</a></li>
+                                <li><a href="#">Цирконієві вініри</a></li>
+                                <li>
+                                    <a href="#">Вініри із композитів (прямі роботи)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Комп'ютерне моделювання посмішки</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>Парадонтологія</strong></li>
+                                <li><a href="#">Лікування гінгівіту</a></li>
+                                <li><a href="#">Лікування пародонтиту</a></li>
+                                <li><a href="#">Лікування пародонтозу</a></li>
+                                <li><a href="#">Вектор терапія</a></li>
+                                <li><a href="#">Плазмотерапія</a></li>
+                                <li><a href="#">Кюретаж пародонтальних кишень</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><strong>Хірургія</strong></li>
+                                <li><a href="#">Видалення зубів</a></li>
+                                <li><a href="#">Трансплантація ясен</a></li>
+                                <li><a href="#">Лазерна кореція ясен</a></li>
+                                <li><a href="#">Кісткова пластика</a></li>
+                                <li><a href="#">Пластика вуздечки</a></li>
+                                <li><a href="#">Резекція верхівки кореня зуба</a></li>
+                                <li><a href="#">Цистектомія (видалення кісти зуба)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><strong>Дитяча стоматологія</strong></li>
+                                <li><a href="#">Адаптаційний візит</a></li>
+                                <li><a href="#">Професійна чистка</a></li>
+                                <li><a href="#">Герметизація фісур</a></li>
+                                <li><a href="#">Лікування молочних зубів</a></li>
+                            </ul>
+                            <ul>
+                                <li><strong>Лікування уві сні</strong></li>
+                                <li>
+                                    <a href="#">Лікування зубів уві сні у дорослих</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лікування зубів уві сні у дітей</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__item">
+                        <div class="contacts__title">Контакти</div>
+                        <div class="contacts__address">
+                            <span class="contacts__text">АДРЕСА:</span>
+                            <a class="contacts__text" href="#">м. Київ, вул. Освіти 14</a>
+                        </div>
+                        <div class="contacts__phone">
+                            <span class="contacts__text">ТЕЛЕФОН:</span>
+                            <a class="contacts__text" href="#">+38 (050) 296-45-66</a>
+                        </div>
+                        <div class="contacts__shedule">
+                            <span class="contacts__text">ГРАФІК РОБОТИ:</span>
+                            <span class="contacts__text">Пн-Пт 09:00 - 20:00</span>
+                            <span class="contacts__text">Cб 10:00 - 19:00</span>
+                            <span class="contacts__text">Нд вихідний</span>
+                        </div>
+
+                        <ul class="icons">
+                            <li>
+                                <a href="#">
+                                    <img src="img/inst.png" alt="instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/fb.png" alt="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/tik-tok.png" alt="tik-tok" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.883922530594!2d30.4670548!3d50.4246343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb804c8f8e1%3A0x5991afbe10207b68!2z0YPQuy4g0J_RgNC-0YHQstC10YnQtdC90LjRjywgMTQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1727629916529!5m2!1sru!2sua"
+                height="740"
+                width="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="img/logo-f.png" alt="Evolution Dental Clinic" />
+                            <div class="social-icons">
+                                <a href="#"><img src="img/inst-gr.svg" alt="Instagram" /></a>
+                                <a href="#"><img src="img/fb-gr.svg" alt="Facebook" /></a>
+                                <a href="#"><img src="img/tik-tok-gr.svg" alt="TikTok" /></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Ціни</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Діагностика</a></li>
+                                <li><a href="#">Проф. гігієна</a></li>
+                                <li><a href="#">Відбілювання зубів</a></li>
+                                <li><a href="#">Лікування зубів</a></li>
+                                <li><a href="#">Вирівнювання зубів</a></li>
+                                <li><a href="#">Лікування зубів під мікроскопом</a></li>
+                                <li><a href="#">Імплантація</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Протезування</a></li>
+                                <li><a href="#">Вініри</a></li>
+                                <li><a href="#">Парадонтологія</a></li>
+                                <li><a href="#">Хірургія</a></li>
+                                <li><a href="#">Дитяча стоматологія</a></li>
+                                <li><a href="#">Лікування зубів уві сні</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contact">
+                            <ul>
+                                <li>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 10 14"
+                                        fill="#727272"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 6.66683C4.55797 6.66683 4.13405 6.49123 3.82149 6.17867C3.50893 5.86611 3.33333 5.44219 3.33333 5.00016C3.33333 4.55814 3.50893 4.13421 3.82149 3.82165C4.13405 3.50909 4.55797 3.3335 5 3.3335C5.44203 3.3335 5.86595 3.50909 6.17851 3.82165C6.49107 4.13421 6.66667 4.55814 6.66667 5.00016C6.66667 5.21903 6.62356 5.43576 6.5398 5.63797C6.45604 5.84018 6.33328 6.02391 6.17851 6.17867C6.02375 6.33344 5.84002 6.4562 5.63781 6.53996C5.4356 6.62372 5.21887 6.66683 5 6.66683ZM5 0.333496C3.76232 0.333496 2.57534 0.825161 1.70017 1.70033C0.824999 2.5755 0.333334 3.76249 0.333334 5.00016C0.333334 8.50016 5 13.6668 5 13.6668C5 13.6668 9.66667 8.50016 9.66667 5.00016C9.66667 3.76249 9.175 2.5755 8.29983 1.70033C7.42466 0.825161 6.23768 0.333496 5 0.333496Z"
+                                            fill="#727272"
+                                        />
+                                    </svg>
+
+                                    <a href="#">м.Київ, вул Освіти 14</a>
+                                </li>
+                                <li>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M4.41333 7.19333C5.37333 9.08 6.92 10.62 8.80667 11.5867L10.2733 10.12C10.4533 9.94 10.72 9.88 10.9533 9.96C11.7 10.2067 12.5067 10.34 13.3333 10.34C13.7 10.34 14 10.64 14 11.0067V13.3333C14 13.7 13.7 14 13.3333 14C7.07333 14 2 8.92667 2 2.66667C2 2.3 2.3 2 2.66667 2H5C5.36667 2 5.66667 2.3 5.66667 2.66667C5.66667 3.5 5.8 4.3 6.04667 5.04667C6.12 5.28 6.06667 5.54 5.88 5.72667L4.41333 7.19333Z"
+                                            fill="#727272"
+                                        />
+                                    </svg>
+                                    <a href="tel:+380502964566">+38 (050) 296-45-66</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copy">
+            <div class="container">
+                © 2024. All rights reserved. Medical licence №3253/Л-П from 13.07.2020.
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
